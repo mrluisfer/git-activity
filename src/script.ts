@@ -3,9 +3,10 @@
 // const dayjs = require("dayjs");
 import simpleGit from "simple-git";
 import * as fs from "fs";
-import * as chalk from "chalk";
 // @ts-ignore
-import * as dayjs from "dayjs";
+import dayjs = require("dayjs");
+// @ts-ignore
+import chalk = require("chalk");
 
 const totalDays = 366; // Days past to generate commits
 const commitFreq = 10; // Commits per day
