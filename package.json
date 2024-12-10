@@ -2,10 +2,11 @@
   "name": "git-activity",
   "version": "0.0.1",
   "description": "A github activity generator script, to have more commits to have an atractive github profile, just for fun",
-  "main": "index.js",
+  "main": "./src/script.js",
   "scripts": {
     "test": "jest",
-    "start": "node script.js"
+    "build": "npx tsc",
+    "start": "npm run build && node ./dist/script.js"
   },
   "repository": {
     "type": "git",
