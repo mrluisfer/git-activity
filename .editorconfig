@@ -1,0 +1,28 @@
+# EditorConfig helps define and maintain consistent coding styles across editors and IDEs.
+root = true
+
+# All files
+[*]
+indent_style = space        # Use spaces for indentation (recommended for JS, TS, and Python)
+indent_size = 4             # Number of spaces per indentation level
+end_of_line = lf            # Use LF (Unix-style) line endings
+charset = utf-8             # File encoding set to UTF-8
+trim_trailing_whitespace = true  # Remove trailing whitespace at the end of lines
+insert_final_newline = true      # Ensure a newline at the end of files
+
+# JavaScript and TypeScript files
+[*.{js,ts,jsx,tsx}]
+indent_size = 2             # JavaScript and TypeScript typically use 2 spaces for indentation
+
+# Python files
+[*.py]
+indent_size = 4             # Python uses 4 spaces for indentation
+max_line_length = 79        # PEP 8 convention: maximum line length of 79 characters
+
+# JSON, YAML, and Markdown files
+[*.{json,yaml,yml,md}]
+indent_size = 2             # JSON, YAML, and Markdown typically use 2 spaces for indentation
+
+# Makefiles (require tabs instead of spaces)
+[Makefile]
+indent_style = tab
