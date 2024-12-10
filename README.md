@@ -1,38 +1,92 @@
-<div align=center>
+<div align="center">
 
 # Github Activity Generator
 
 </div>
 
->disclaimer: I made this project with the aim of having fun and to learn to automate things using the Python language
+<div align='center'>
 
-hello, this is my second automation project which is making a github activity generator, using this script you can change and manipulate your github contribution timeline from arid to greenish:
+**Disclaimer: This project was created for fun and to learn how to automate tasks using Python and JavaScript.**
 
-## Before 😩👎 
-![Github Activity Generator](https://i.postimg.cc/d1NGrsSX/unactive-commit.png "before")
+</div>
 
-be lush and very green, you will look very active and consistent in contributing on Github:
+This is a project done for fun, but at the same time it serves a purpose. Usually when you work you can be that your company or work team change their branch control system, so it is normal that the activities performed are lost making your profile can look a little ugly.
 
-## After 💪👍
-![Github Activity Generator](https://i.postimg.cc/sxB7Jkk2/active-commit.png "after")
+You can use any of these scripts to be able to have those activities back, of course taking into account the limitations of having it in a repo.
 
-## How to use?
-1. Make sure in your Machine already installed Python 3 and Git
-2. Make sure Git in in your Machine already configured with Github.
-3. create an empty Github Repository can public or private, but I prefer you to make it private. do not initialize it.
-4. Download the [main.py script](https://github.com/aliifam/github-activity-generator/archive/main.zip) and open the file in your text editor.
-5. delete the file commit.txt
-6. customize the script in main.py for configuration as you want in here:
-```python
-total_day = 366 #total days back
-commit_frequency = 10 #commit time per day
-repo_link = "https://github.com/aliifam/github-activity-generator.git"
+You can download the script and use it in multiple repositories if you want.
+
+I'm NOT responsible for the use that each person makes with the script, it's just for fun and learning.
+
+## How to Use?
+
+This project is available in Python and JavaScript (Node.js), choose your preferred language and follow the instructions below:
+
+Using **Python**:
+
+1.  Ensure you have Python 3 and Git installed on your machine.
+
+```bash
+$ python3 --version
+$ git --version
 ```
-7. after the script is already, you just run the script and see the magic.
-8. the script will make a new commit.txt file and make very many commit as you want after the process finished the script will push the repository to GitHub.
-9. after all the process is successful, please press the star for this repository😊.
 
-## Troubleshooting
-do you have a question or do you get an error?
+2.  Configure Git with your GitHub account (make sure git push works properly).
 
-please create an [issue](https://github.com/aliifam/github-activity-generator/issues) in this repository and I will try to answer and solve it.
+```bash
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your-email@example.com"
+```
+
+3.  Create an empty repository on GitHub (public or private, but private is recommended) without initializing it (no README or other files).
+
+- Go to your GitHub account and create a new repository:
+- Visit github.com/new.
+- Enter a repository name, and set it to private (recommended).
+- Do not initialize the repository
+
+1.  Download the main.py file and open it in your text editor.
+2.  Delete any existing commit.txt file in the project folder `$ rm commit.txt` or using the file explorer.
+3.  Modify the following variables in main.py to configure the script as per your needs:
+
+```python
+total_day = 366 # Total number of days to go back
+commit_frequency = 10 # Number of commits per day
+repo_link = "<https://github.com/your-username/your-repo.git>" # Repository link
+variability = False # Set to True for random commits per day
+```
+
+7.  Run the script from your terminal:
+
+```bash
+$ python3 main.py
+```
+
+Similar to the before steps but using **JavaScript (Node.js)`**:
+
+1.  Ensure you have Node.js, npm, and Git installed on your machine.
+2.  Configure Git with your GitHub account (make sure git push works properly).
+3.  Create an empty repository on GitHub (public or private, but private is recommended) without initializing it (no README or other files).
+4.  Clone this repository and install the required dependencies:
+5.  Open the generate-commits.js file in your text editor and customize the following variables:
+
+```js
+const totalDays = 366; // Total number of days to go back
+const commitFreq = 10; // Number of commits per day
+const repoLink = "<https://github.com/your-username/your-repo.git>"; // Repository link
+const variability = false; // Set to true for random commits per day
+```
+
+6.  Run the script from your terminal:
+
+```bash
+$ npm run start # or node index.js
+```
+
+The script will generate commits, push them to your repository, and create a `commit.txt` file to track changes.
+
+That’s it! Your GitHub profile will now look much more active.
+
+### Troubleshooting
+
+Have questions or run into issues? Please open an issue, and I’ll do my best to help you!
