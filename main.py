@@ -36,11 +36,11 @@ while tl > 0:
         f = open("commit.txt", "a+")
         l_date = now + datetime.timedelta(days=-pointer)
         formatdate = l_date.strftime("%Y-%m-%d")
-        f.write(f"commit ke {ctr}: {formatdate}\n")
+        f.write(f"commit - {ctr}: {formatdate}\n")
         f.close()
         os.system("git add .")
-        os.system(f"git commit --date=\"{formatdate} 12:15:10\" -m \"commit ke {ctr}\"")
-        print(f"commit ke {ctr}: {formatdate}")
+        os.system(f"git commit --date=\"{formatdate} 12:15:10\" -m \"commit - {ctr}\"")
+        print(f"commit - {ctr}: {formatdate}")
         ct-=1
         ctr+=1
     pointer+=1

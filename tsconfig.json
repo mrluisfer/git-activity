@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020" /* Usa una versión moderna de JavaScript para compatibilidad con features recientes. */,
+    "module": "commonjs" /* Módulo compatible con Node.js. */,
+    "lib": [
+      "es2020",
+      "dom"
+    ] /* Incluye las librerías estándar y DOM para soporte en navegadores. */,
+
+    /* Modules */
+    "moduleResolution": "node" /* Resolución de módulos basada en Node.js. */,
+    "esModuleInterop": true /* Mejora la interoperabilidad con módulos CommonJS. */,
+    "resolveJsonModule": true /* Permite importar archivos JSON. */,
+
+    /* Emit */
+    "outDir": "./dist" /* Directorio de salida para archivos compilados. */,
+    "rootDir": "./src" /* Directorio raíz para los archivos fuente. */,
+    "sourceMap": true /* Genera archivos .map para depuración. */,
+
+    /* Type Checking */
+    "strict": true /* Activa todas las comprobaciones estrictas. */,
+    "noImplicitAny": true /* Deshabilita el uso implícito de `any`. */,
+    "strictNullChecks": true /* Exige comprobaciones de `null` y `undefined`. */,
+    "noUnusedLocals": true /* Reporta variables no usadas. */,
+    "noUnusedParameters": true /* Reporta parámetros no utilizados. */,
+    "noImplicitReturns": true /* Reporta caminos de código que no devuelven un valor. */,
+    "noFallthroughCasesInSwitch": true /* Reporta casos sin `break` en los `switch`. */,
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true /* Asegura consistencia en el uso de mayúsculas/minúsculas en nombres de archivo. */,
+
+    /* JavaScript Support */
+    "allowJs": true /* Permite incluir archivos .js en el proyecto. */,
+    "checkJs": false /* Desactiva la comprobación de errores en archivos JavaScript. */,
+
+    /* Completeness */
+    "skipLibCheck": true /* Omite la verificación de tipos en archivos .d.ts. */,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"
+  ] /* Incluye todos los archivos en el directorio `src`. */,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] /* Excluye la carpeta de salida y dependencias. */
+}
