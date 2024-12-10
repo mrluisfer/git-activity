@@ -7,7 +7,7 @@ total_day = 366 # how far back to start commits
 commit_freq = 10 # num of commits per day
 
 # set to True if you want the number of commits per day to be random for a more realistic graph
-variablity = False
+variablity = True 
 
 # change to your repo
 repo_link = "git@github.com:mrLuisFer/test.git"
