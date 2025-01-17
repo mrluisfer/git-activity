@@ -8,7 +8,7 @@ import dayjs = require("dayjs");
 // @ts-ignore
 import chalk = require("chalk");
 
-const totalDays = 1; // Days past to generate commits
+const totalDays = 10; // Days past to generate commits
 const commitFreq = 5; // Commits per day
 const variability = false; // Variability in commits per day
 const repoLink = "git@github.com:mrLuisFer/test.git"; // Repository link
