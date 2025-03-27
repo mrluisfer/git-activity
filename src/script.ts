@@ -2,7 +2,7 @@
 // const fs = require("fs");
 // const dayjs = require("dayjs");
 import simpleGit from "simple-git";
-import * as fs from "fs";
+import * as fs from "node:fs";
 // @ts-ignore
 import dayjs = require("dayjs");
 // @ts-ignore
@@ -18,7 +18,7 @@ const now = dayjs();
 let pointer = 0; // Days pointer
 let ctr = 1; // Commit counter
 
-function log(title: string, color: Function) {
+function log(title: string, color: (s: string) => string) {
   console.log(color(`\n${title}`));
 }
 
