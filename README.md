@@ -10,6 +10,11 @@
 
 </div>
 
+<p align="center">
+	<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhrc2dobmYzYndvMGpuNzdjeXdnbXJ5NmF6ano1ZW52M2Jpb3ZjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NytMLKyiaIh6VH9SPm/giphy.gif" height="200" width="200" alt="GitHub Spray logo"/>
+</p>
+
+
 This is a project done for fun, but at the same time it serves a purpose. Usually when you work you can be that your company or work team change their branch control system, so it is normal that the activities performed are lost making your profile can look a little ugly.
 
 You can use any of these scripts to be able to have those activities back, of course taking into account the limitations of having it in a repo.
